@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-	site: 'https://xokomola.github.io/moonshot-project',
+	site: 'https://xokomola.github.io',
 	integrations: [mdx(), sitemap()],
-	build: { format: 'file'}
+	build: { format: 'file'},
+	base: '/moonshot-project'
 });
