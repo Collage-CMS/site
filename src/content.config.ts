@@ -29,7 +29,7 @@ const articles = defineCollection({
 });
 
 const topics = defineCollection({
-	loader: glob({ base: './src/content/topics', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: './', pattern: '**/*.{md,mdx}' }),
 	schema: ({ image }) =>
 		z.object({
 			title: z.string(),
@@ -42,7 +42,7 @@ const topics = defineCollection({
 });
 
 const authors = defineCollection({
-	loader: glob({ base: './src/content/authors', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: '../../../content', pattern: '**/*.md}' }),
 	schema: ({ image }) =>
 		z.object({
 			name: z.string(),
