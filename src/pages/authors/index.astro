@@ -94,7 +94,7 @@ const authors = (await getCollection('authors'))
 					{
 						authors.map((author) => (
 							<li>
-								<a href={`authors/${author.id}/`}>
+								<a href={`authors/${author.id}.html`}>
 									{author.data.avatar && (
 										<Image width={240} height={2} src={author.data.avatar} alt="" />
 									)}

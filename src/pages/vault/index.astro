@@ -92,7 +92,7 @@ const vault = await getCollection('vault');
 					{
 						vault.map((note) => (
 							<li>
-								<a href={`vault/${note.id}/`}>
+								<a href={`vault/${note.id}.html`}>
 									<h4 class="title">{note.data.title}</h4>
 								</a>
 							</li>
