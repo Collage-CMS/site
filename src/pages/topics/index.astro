@@ -94,7 +94,7 @@ const topics = (await getCollection('topics')).sort(
 					{
 						topics.map((topic) => (
 							<li>
-								<a href={`topics/${topic.id}.html`}>
+								<a href={`/topics/${topic.id}.html`}>
 									{topic.data.heroImage && (
 										<Image width={720} height={360} src={topic.data.heroImage} alt="" />
 									)}
