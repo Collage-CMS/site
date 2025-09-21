@@ -96,7 +96,7 @@ const authors = (await getCollection('authors'))
 							<li>
 								<a href={`${import.meta.env.BASE_URL}/authors/${author.id}.html`}>
 									{author.data.avatar && (
-										<Image width={240} height={2} src={`${import.meta.env.BASE_URL}${author.data.avatar}`} alt="" />
+										<Image width={240} height={2} src={author.data.avatar} alt="" />
 									)}
 									<h4 class="title">{author.data.name}</h4>
 								</a>
