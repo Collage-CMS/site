@@ -63,7 +63,7 @@ const authors = defineCollection({
 
 const vault = defineCollection({
 	loader: ObsidianMdLoader({ 
-		base: '../content',
+		base: '../../content',
 		pattern: '**/*.md'
 	}),
 	schema: ({ image }) => ObsidianDocumentSchema.extend({
