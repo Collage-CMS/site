@@ -42,7 +42,7 @@ const topics = defineCollection({
 });
 
 const authors = defineCollection({
-	loader: glob({ base: '', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: './src/content/authors', pattern: '**/*.{md,mdx}' }),
 	schema: ({ image }) =>
 		z.object({
 			name: z.string(),
